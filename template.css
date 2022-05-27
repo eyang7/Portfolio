@@ -1,0 +1,222 @@
+/* Overall navigation bar */
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+    background-color: black;
+    width: 100%; 
+    overflow: hidden;
+    position: fixed; 
+}
+
+.navbar .sidebar .nav {
+    display: inline; 
+}
+/* style links inside the navbar */
+.sidebar .nav a {
+    font-weight: bold; 
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;  
+    padding: 10px; 
+    text-decoration: none;
+    color: rgb(226, 224, 224); 
+}
+
+.navbar .sidebar .nav a:hover, a:active {
+    text-decoration: none;
+    font-weight: bold; 
+    text-shadow: 0 0 5px aquamarine;
+    color: white; 
+}
+
+.navimgs {
+    display: flex; 
+    justify-content: end;
+}
+
+
+/* Sidebar decoration */
+.sidebar a {
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-weight: bold; 
+}
+
+/* icons on the side of navbar  */
+/* src: https://codepen.io/ephs23/pen/NeQZGx */
+.navimgs {
+    list-style: none;
+  }
+  
+.navimgs a {
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    text-align: match-parent;
+    line-height: 80px;
+    font-size: 25px;
+    margin: 5px;
+    padding: 0.5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgb(175, 172, 172);
+    z-index: 1;
+  }
+  
+.navimgs a .icon {
+    position:fixed;
+    color: rgb(99, 99, 99); 
+    transition: .5s;
+    z-index: 3;
+}
+  
+.navimgs a:hover .icon {
+    color: white;
+    transform: rotateY(360deg);
+}
+  
+.navimgs a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+}
+  
+.navimgs a:hover:before {
+    top: 0;
+}
+
+.navimgs li:nth-child(1) a:before{
+    background: black;
+}
+  
+.navimgs li:nth-child(2) a:before{
+    background: #3b5999;
+}
+
+.navimgs li:nth-child(3) a:before {
+    background: darkcyan;
+}
+
+.navimgs li:nth-child(4) a:before {
+    background: lightblue;
+}
+
+
+
+/* homepage contents */
+.homepage {
+    background-color: rgb(106, 127, 233);
+    height: 600px;  
+    width: 100%;
+}
+.homepage .title h1{
+    font-size: 85px; 
+    color: white; 
+    width:53%; 
+    font-family: 'Inter', sans-serif; 
+    font-weight: bold; 
+    padding: 73px; 
+    padding-right: 10px; 
+    padding-top: 10%; 
+    padding-left: 22.8%; 
+    float:left; 
+}
+
+.homepage .welcome h4{
+    color:white; 
+    font-size: 16px; 
+    width: 366px; 
+    font-weight: 590; 
+    float:left; 
+    font-family: 'Inter', sans-serif; 
+    margin-left: 23%; 
+    margin-top: -48px; 
+    overflow-wrap: break-word;
+    padding-bottom: 19px; 
+}
+
+.homepage .links .btn-learn{
+    text-decoration: none;
+    background-color:rgb(106, 127, 233); 
+    font-weight: 600; 
+    color: white;
+    float:left; 
+    padding: 8px; 
+}
+
+.homepage .links{
+    display: flex; 
+    margin-top: 22%;
+    margin-left: 22.5%; 
+    justify-content: flex-start;
+}
+
+.homepage .links a:hover, a:active{
+    color: rgb(238, 238, 238); 
+    text-shadow: none;
+}
+
+/* portfolio picture */
+.homepage .title .portfolio{
+    width: 300px; 
+    height: 374px;  
+    float: right; 
+    margin-right: 23%; 
+    margin-top: 6%; 
+    border-radius: 5px; 
+}
+
+/* about me first page */
+.shortbio {
+    background-color: rgb(238, 238, 238);
+    height: 500px;
+}
+
+/* short bio title  */
+.shortbio h3 {
+    margin-left: 23%; 
+    font-size: 15px; 
+    color:  rgba(47,47,48,.6); 
+}
+
+/* Short biography  */
+.shortbio h5 {
+    margin-left: 23%; 
+    font-size: 23px; 
+    width: 54%; 
+    overflow-wrap: break-word;
+    line-height: 35px; 
+    margin-bottom: 10px; 
+}
+
+/* button to learn more, leading to about me page */
+
+/* Collage */
+.collage {
+    height: 700px;
+}
+
+.collage h3 {
+    margin-left: 23%; 
+    font-size: 15px; 
+    color:  rgba(47,47,48,.6); 
+}
+
+/* Timeline */
+.extra {
+    height: 300px; 
+    background-color: rgb(238, 238, 238); 
+}
+
+.extra h3 {
+    margin-left: 23%;
+    font-size: 15px; 
+    color: rgba(47,47,48,.6); 
+}
