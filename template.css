@@ -1,3 +1,7 @@
+*{
+    scroll-behavior: smooth !important;
+}
+
 /* Overall navigation bar */
 .navbar {
     display: flex; 
@@ -113,7 +117,7 @@
 /* homepage contents */
 .homepage {
     background-color: rgb(106, 127, 233);
-    height: 600px;  
+    height: 570px;  
     width: 100%;
 }
 .homepage .title h1{
@@ -153,15 +157,18 @@
 
 .homepage .links{
     display: flex; 
-    margin-top: 22%;
+    margin-top: 21%;
     margin-left: 22.5%; 
     justify-content: flex-start;
 }
 
 .homepage .links a:hover, a:active{
-    color: rgb(238, 238, 238); 
+    color: rgb(215, 213, 213); 
     text-shadow: none;
+    font-weight: 500px; 
 }
+
+
 
 /* portfolio picture */
 .homepage .title .portfolio{
@@ -174,20 +181,20 @@
 }
 
 /* about me first page */
-.shortbio {
+#shortbio {
     background-color: rgb(238, 238, 238);
     height: 500px;
 }
 
 /* short bio title  */
-.shortbio h3 {
+#shortbio h3 {
     margin-left: 23%; 
     font-size: 15px; 
     color:  rgba(47,47,48,.6); 
 }
 
 /* Short biography  */
-.shortbio h5 {
+#shortbio h5 {
     margin-left: 23%; 
     font-size: 23px; 
     width: 54%; 
