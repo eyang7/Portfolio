@@ -1,3 +1,6 @@
+/*===============
+  global styles
+===============*/
 *{
     scroll-behavior: smooth !important;
 }
@@ -113,117 +116,98 @@
 }
 
 
+  
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    color: var(--clr-fg);
+    background-color: var(--clr-bg);
+  }
+  
 
-/* homepage contents */
-.homepage {
-    background-color: rgb(106, 127, 233);
-    height: 570px;  
-    width: 100%;
-}
-.homepage .title h1{
-    font-size: 85px; 
-    color: white; 
-    width:53%; 
-    font-family: 'Inter', sans-serif; 
-    font-weight: bold; 
-    padding: 73px; 
-    padding-right: 10px; 
-    padding-top: 10%; 
-    padding-left: 22.8%; 
-    float:left; 
-}
-
-.homepage .welcome h4{
-    color:white; 
-    font-size: 16px; 
-    width: 366px; 
-    font-weight: 590; 
-    float:left; 
-    font-family: 'Inter', sans-serif; 
-    margin-left: 23%; 
-    margin-top: -48px; 
-    overflow-wrap: break-word;
-    padding-bottom: 19px; 
-}
-
-.homepage .links .btn-learn{
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.2;
+    color: var(--clr-fg-alt);
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.3rem;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
     text-decoration: none;
-    background-color:rgb(106, 127, 233); 
-    font-weight: 600; 
-    color: white;
-    float:left; 
-    padding: 8px; 
-}
-
-.homepage .links{
-    display: flex; 
-    margin-top: 21%;
-    margin-left: 22.5%; 
-    justify-content: flex-start;
-}
-
-.homepage .links a:hover, a:active{
-    color: rgb(215, 213, 213); 
-    text-shadow: none;
-    font-weight: 500px; 
-}
+  }
+  
+  button {
+    cursor: pointer;
+  }
 
 
+  /* Projects */
+  
+.projects__grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, calc(100% / 3 - [grid-gap] * 2 / 3));
+    grid-gap: 20px; 
 
-/* portfolio picture */
-.homepage .title .portfolio{
-    width: 300px; 
-    height: 374px;  
-    float: right; 
-    margin-right: 23%; 
-    margin-top: 6%; 
-    border-radius: 5px; 
-}
+  }
+  
+  
+  .project {
+    padding: 2em;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: transform 0.2s linear;
+  }
+  
+  .project:hover {
+    transform: translateY(-7px);
+  }
+  
+  .project__description {
+    margin-top: 1em;
+  }
+  
+  .project__stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.2em 0;
+  }
+  
+  .project__stack-item {
+    margin: 0.5em;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--clr-fg-alt);
+  }
+  
+  .project .link--icon {
+    margin-left: 0.5em;
+  }
+  
 
-/* about me first page */
-#shortbio {
-    background-color: rgb(238, 238, 238);
-    height: 500px;
-}
-
-/* short bio title  */
-#shortbio h3 {
-    margin-left: 22.8%; 
-    font-size: 15px; 
-    color:  rgba(47,47,48,.6); 
-}
-
-/* Short biography  */
-#shortbio h5 {
-    margin-left: 22.8%; 
-    font-size: 23px; 
-    width: 54%; 
-    overflow-wrap: break-word;
-    line-height: 35px; 
-    margin-bottom: 10px; 
-}
-
-/* button to learn more, leading to about me page */
-
-/* Collage */
-.collage {
-    height: 700px;
-}
-
-.collage h3 {
-    margin-left: 23%; 
-    font-size: 15px; 
-    color:  rgba(47,47,48,.6); 
-}
-
-/* Timeline */
-.extra {
-    height: 300px; 
-    background-color: rgb(238, 238, 238); 
-}
-
-.extra h3 {
-    margin-left: 23%;
-    font-size: 15px; 
-    color: rgba(47,47,48,.6); 
-}
+  
